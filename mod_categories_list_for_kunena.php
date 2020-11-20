@@ -8,4 +8,15 @@
  * @developers   Oscar Lin
  */
 
+// No direct access
 defined('_JEXEC') or die;
+// Include the syndicate functions only once
+require_once dirname(__FILE__) . '/helper.php';
+
+$categories = ModCategoriesListForKunenaHelper::getChildren(1);
+
+foreach ($categories as $key => $value) {
+    $categories[$key]->children = ModCategoriesListForKunenaHelper::getChildren($categories[$key]->id);
+}
+
+require JModuleHelper::getLayoutPath('mod_categories_list_for_kunena');

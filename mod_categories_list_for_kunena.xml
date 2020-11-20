@@ -1,5 +1,5 @@
-<?xml version="0.1.0" encoding="utf-8"?>
-<extension type="module" version="3.1" client="administrator" method="upgrade">
+<?xml version="1.0.0" encoding="UTF-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
     <name>Categories list for Kunena</name>
     <author>Oscar Lin</author>
     <creationDate>November 2020</creationDate>
@@ -10,6 +10,9 @@
     <version>0.1.0</version>
     <description>Categories list for Kunena</description>
     <files>
+        <folder>tmpl</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
         <filename module="mod_categories_list_for_kunena">mod_categories_list_for_kunena.php</filename>
     </files>
     <updateservers>

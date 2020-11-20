@@ -1,0 +1,25 @@
+/**
+ * @title        Categories list for Kunena
+ * @copyright    Copyright (C) 2020 Esangtek, All rights reserved.
+ * @license      GNU General Public License version 3 or later.
+ * @author url   https://des13.com/
+ * @developers   Oscar Lin
+ */
+
+.level-1-row {
+    background: #529bce;
+
+}
+
+.level-1-row a {
+    border-left: 3px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+ul.row.level-2-row a {
+    color: #424753;
+}
+
+.level-2-row li {
+    list-style-type: none;
+}
