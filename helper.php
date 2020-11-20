@@ -8,6 +8,9 @@
  * @developers   Oscar Lin
  */
 
+// No direct access
+defined('_JEXEC') or die;
+
 require_once JPATH_ROOT . '/libraries/kunena/forum/category/helper.php';
 require_once JPATH_ROOT . '/libraries/kunena/layout/layout.php';
 
