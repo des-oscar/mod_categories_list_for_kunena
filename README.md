@@ -2,7 +2,7 @@
 
 Categories list for Kunena.
 
-Show all of the Kunena categories list in your site.
+Show Kunena categories on your site.
 
 After installed, Place the module in any position.
 
