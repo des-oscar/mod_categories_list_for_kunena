@@ -16,6 +16,11 @@ require_once JPATH_ROOT . '/libraries/kunena/layout/layout.php';
 
 class ModCategoriesListForKunenaHelper
 {
+    public static function getCategories($id)
+    {
+        return KunenaForumCategoryHelper::getCategories($id);
+    }
+
     public static function getChildren($parent)
     {
         return KunenaForumCategoryHelper::getChildren($parent);

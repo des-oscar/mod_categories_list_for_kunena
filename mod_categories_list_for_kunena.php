@@ -13,7 +13,12 @@ defined('_JEXEC') or die;
 
 require_once dirname(__FILE__) . '/helper.php';
 
-$categories = ModCategoriesListForKunenaHelper::getChildren(1);
+$parentCategoriesId = $params->get('category_id');
+
+$categories = array();
+foreach ($parentCategoriesId as $parentCategory) {
+    $categories = array_merge($categories, ModCategoriesListForKunenaHelper::getCategories($parentCategory));
+}
 
 foreach ($categories as $key => $value) {
     $categories[$key]->children = ModCategoriesListForKunenaHelper::getChildren($categories[$key]->id);

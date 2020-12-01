@@ -7,19 +7,29 @@
     <license>GNU General Public License</license>
     <authorEmail>oscar@des13.com</authorEmail>
     <authorUrl>des13.com</authorUrl>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <description>Categories list for Kunena</description>
     <files>
         <folder>tmpl</folder>
         <folder>tmpl/css</folder>
         <filename>tmpl/css/default.css</filename>
+        <filename>tmpl/default.php</filename>
         <filename>helper.php</filename>
         <filename>index.html</filename>
         <filename module="mod_categories_list_for_kunena">mod_categories_list_for_kunena.php</filename>
         <filename>mod_categories_list_for_kunena.xml</filename>
     </files>
+    <languages>
+		<language tag="en-GB">en-GB/en-GB.mod_categories_list_for_kunena.ini</language>
+	</languages>
     <config>
         <fields name="params">
+            <fieldset name="basic">
+                <field name="category_id" type="kunenacategorylist" default="0"
+                    description="MOD_CATEGORIESLISTFORKUNENA_PARAM_CATEGORYLIST_DESC"
+                    label="MOD_CATEGORIESLISTFORKUNENA_PARAM_CATEGORYLIST" multiple="true" size="5">
+                </field>
+            </fieldset>
             <fieldset name="advanced">
                 <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL"
                     description="JFIELD_ALT_MODULE_LAYOUT_DESC" />

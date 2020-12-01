@@ -11,13 +11,13 @@
 // No direct access
 defined('_JEXEC') or die;
 
-$document = JFactory::getDocument();
-$document->addStyleSheet(JURI::root(true) . '/modules/mod_categories_list_for_kunena/tmpl/css/default.css');
+JFactory::getDocument()->addStyleSheet('//stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+JFactory::getDocument()->addStyleSheet(JURI::root(true) . '/modules/mod_categories_list_for_kunena/tmpl/css/default.css');
 
 ?>
 
 <div class="categories-list-forkunena<?php echo $moduleclass_sfx; ?>">
-    <div class="container bg-light shadow-lg rounded border">
+    <div class="container bg-light rounded border">
         <?php foreach ($categories as $category) : ?>
             <div class="row level-1-row p-2">
                 <a class="px-2" href="<?php echo $category->getUri(); ?>"><?php echo $category->name; ?></a>
