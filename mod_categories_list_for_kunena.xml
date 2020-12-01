@@ -41,7 +41,7 @@
     </config>
     <updateservers>
         <server type="extension" priority="2" name="Categories list for Kunena">
-            https://raw.githubusercontent.com/des-oscar/mod_categories_list_for_kunena/main/updates.xml
+            https://raw.githubusercontent.com/des-oscar/mod_categories_list_for_kunena/master/updates.xml
         </server>
     </updateservers>
 </extension>
