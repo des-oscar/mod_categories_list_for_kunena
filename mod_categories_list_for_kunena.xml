@@ -19,7 +19,7 @@
         <filename module="mod_categories_list_for_kunena">mod_categories_list_for_kunena.php</filename>
         <filename>mod_categories_list_for_kunena.xml</filename>
     </files>
-    <languages>
+    <languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.mod_categories_list_for_kunena.ini</language>
 	</languages>
     <config>
