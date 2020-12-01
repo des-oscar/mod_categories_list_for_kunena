@@ -11,9 +11,10 @@
 // No direct access
 defined('_JEXEC') or die;
 
-require_once dirname(__FILE__) . '/helper.php';
+JLoader::register('ModCategoriesListForKunenaHelper', __DIR__ . '/helper.php');
 
 $parentCategoriesId = $params->get('category_id');
+$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8');
 
 $categories = array();
 foreach ($parentCategoriesId as $parentCategory) {
